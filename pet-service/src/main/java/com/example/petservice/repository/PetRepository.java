@@ -1,4 +1,6 @@
 package com.example.petservice.repository;
 
-public interface PetRepository {
-}
+import com.example.petservice.domain.Pet;
+import org.springframework.data.repository.CrudRepository;
+
+public interface PetRepository  extends CrudRepository<Pet, Long> {}
